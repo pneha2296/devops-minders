@@ -1,9 +1,8 @@
 export interface Service {
-  id: string
-  title: string
-  summary: string
-  description: string
-  outcomes: string[]
+  title: string;
+  description: string;
+  icon: React.ReactNode;
+  isActive?: boolean;
 }
 
 export interface Client {
