@@ -1,10 +1,9 @@
 import type { Client } from '../types'
 
 export const clients: Client[] = [
-  { id: 'northstar', name: 'Northstar Labs', logo: 'NS', industry: 'SaaS' },
-  { id: 'pulsegrid', name: 'PulseGrid', logo: 'PG', industry: 'Cloud Platforms' },
-  { id: 'finloop', name: 'FinLoop', logo: 'FL', industry: 'Fintech' },
-  { id: 'carestack', name: 'CareStack Health', logo: 'CH', industry: 'HealthTech' },
-  { id: 'supplylane', name: 'SupplyLane', logo: 'SL', industry: 'Logistics' },
-  { id: 'retailmesh', name: 'RetailMesh', logo: 'RM', industry: 'Retail Ops' },
+  { id: "1", name: "Itsy Bitsy", url: "itsybitsy.in", tag: "DevOps Setup" },
+  { id: "2", name: "Vespa", url: "vespa.ai", tag: "Search Infrastructure" },
+  { id: "3", name: "Fearless Code", url: "fearlesscode.de", tag: "DevSecOps" },
+  { id: "4", name: "Nestlé India", url: "nestle.in", tag: "Enterprise Cloud" },
+  { id: "5", name: "Workaholic", url: "workaholic.com", tag: "Cloud Migration" },
 ]

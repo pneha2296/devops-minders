@@ -8,9 +8,9 @@ export interface Service {
 
 export interface Client {
   id: string
+  url: string
   name: string
-  logo: string
-  industry: string
+  tag: string
 }
 
 export interface Testimonial {
