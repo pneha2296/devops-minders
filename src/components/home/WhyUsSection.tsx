@@ -34,22 +34,43 @@ export function WhyUsSection() {
                 </div>
 
                 {/* Right Content - Interactive Red Section */}
+                {/* Right Content - Interactive Red Section */}
                 <div className="bg-primary py-20 px-8 md:px-16 lg:px-24 flex items-center justify-center relative overflow-hidden group">
-                    {/* Subtle Dotted Pattern Overlay */}
-                    <div className="absolute bottom-10 right-10 opacity-30 grid grid-cols-5 gap-2">
-                        {[...Array(25)].map((_, i) => (
+
+                    {/* 1. Very light white dots across whole primary */}
+                    <div
+                        className="absolute inset-0 opacity-[0.05] pointer-events-none"
+                        style={{
+                            backgroundImage: 'radial-gradient(white 1px, transparent 1px)',
+                            backgroundSize: '30px 30px',
+                        }}
+                    />
+
+                    {/* 2. 25 dots in right down corner */}
+                    <div className="absolute bottom-12 right-52 grid grid-cols-10 gap-2 opacity-40">
+                        {[...Array(100)].map((_, i) => (
                             <div key={i} className="w-1 h-1 bg-white rounded-full"></div>
                         ))}
                     </div>
 
                     {/* Glassmorphism Card */}
                     <motion.div
-                        whileHover="hover"
-                        className="relative w-full max-w-sm aspect-square bg-gradient-to-tr from-black/40 to-black/10 border border-white/20 rounded-3xl flex flex-col items-center justify-center text-center p-8 cursor-pointer overflow-hidden group shadow-2xl"
+                        style={{ perspective: 1000 }}
+                        whileHover={{ 
+                            scale: 1.05, 
+                            // 2. The "Cross-Flip" Logic: 
+                            // rotateX: tilts backward from top
+                            // rotateY: tilts back from right
+                            rotateX: -10, // Tilts the card back slightly
+                            rotateY: -10, // Tilts the card back from the right
+                            // Add subtle shadow offset for depth
+                            // boxShadow: "-15px 15px 40px rgba(0,0,0,0.5)"
+                        }}
+                        transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                        className="relative w-full max-w-sm aspect-square bg-gradient-to-tr from-black/40 to-black/10 border border-white/20 rounded-3xl flex flex-col items-center justify-center text-center p-8 cursor-pointer overflow-hidden group shadow-2xl z-10"
                     >
                         {/* 10x Circle with Infinite Fade-out Effect */}
                         <div className="relative mb-8">
-                            {/* The Inner 10x Circle */}
                             <div className="w-24 h-24 rounded-full border-2 border-white flex items-center justify-center text-2xl font-bold relative z-10">
                                 10x
                             </div>
@@ -60,11 +81,10 @@ export function WhyUsSection() {
                                 transition={{ duration: 1, repeat: Infinity, ease: "easeOut" }}
                                 className="absolute inset-0 rounded-full border-2 border-white/50"
                             />
-                            {/* Secondary background pulse for depth */}
                             <div className="absolute -inset-4 bg-white/5 rounded-full blur-xl"></div>
                         </div>
 
-                        {/* Faster Deployments Text with Hover Slide-in Effect */}
+                        {/* Faster Deployments Text */}
                         <div className="space-y-2 overflow-hidden">
                             <h3 className="text-2xl text-white font-bold mb-2">Faster Deployments</h3>
                             <p className="text-white/80">
@@ -72,8 +92,8 @@ export function WhyUsSection() {
                             </p>
                         </div>
 
-                        {/* Decorative Background Glow */}
-                        <div className="absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-red-500/20 rounded-full blur-3xl -z-10"></div>
+                        {/* Decorative Background Glow (Moved to right down corner of card) */}
+                        <div className="absolute bottom-4 right-4 w-32 h-32 bg-red-500/20 rounded-full blur-3xl -z-10"></div>
                     </motion.div>
                 </div>
 
