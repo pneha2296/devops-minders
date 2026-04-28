@@ -1,4 +1,4 @@
-import { Activity, Box, Cloud, Code2, GitBranch, Shield } from 'lucide-react';
+import { Activity, Container, Cloud, Code2, GitBranch, Shield } from 'lucide-react';
 import type { Service } from '../types'
 
 export const services: Service[] = [
@@ -16,7 +16,7 @@ export const services: Service[] = [
   {
     title: "Kubernetes Orchestration",
     description: "Production-ready K8s for scalable containers.",
-    icon: <Box className="w-6 h-6" />,
+    icon: <Container className="w-6 h-6" />,
   },
   {
     title: "Infrastructure as Code",

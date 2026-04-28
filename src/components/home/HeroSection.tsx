@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from "react";
-import { Container, Layers, GitBranch, Boxes } from "lucide-react";
+import { Cloud, GitBranch, Container, Code2 } from "lucide-react";
 import { motion } from "framer-motion";
 
 const ORBIT_ICONS = [
-    { Icon: Container, label: "Docker" },
-    { Icon: Layers, label: "Terraform" },
-    { Icon: GitBranch, label: "Jenkins" },
-    { Icon: Boxes, label: "Kubernetes" },
+    { Icon: Cloud, label: "Docker" },
+    { Icon: GitBranch, label: "Terraform" },
+    { Icon: Container, label: "Jenkins" },
+    { Icon: Code2, label: "Kubernetes" },
 ];
 
 const TECH_STACK = [
