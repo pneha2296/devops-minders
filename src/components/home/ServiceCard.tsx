@@ -1,4 +1,4 @@
-export const ServiceCard = ({ title, description, icon }) => {
+export const ServiceCard = ({ title, description, icon }: any) => {
     return (
       <div
         className="
