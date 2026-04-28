@@ -16,7 +16,7 @@ export function Navbar() {
         workflows for businesses ready to move fast.
       </div>
 
-      <header className="sticky top-0 border-b border-white/10 bg-black text-white">
+      <header className="fixed top-0 left-0 w-full z-[100] border-b border-white/10 bg-black text-white">
         <div className="container mx-auto px-4 h-20 flex items-center justify-between">
           <img src="/assets/logo.png" alt="DevOps Minders" className='w-[170px]' />
 
@@ -52,7 +52,7 @@ export function Navbar() {
 
       {/* Mobile Drawer */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-black text-white transform transition-transform duration-300 z-50 ${open ? "translate-x-0" : "translate-x-full"
+        className={`fixed top-0 right-0 h-full w-64 bg-black text-white transform transition-transform duration-300 z-150 ${open ? "translate-x-0" : "translate-x-full"
           }`}
       >
         {/* Close button */}

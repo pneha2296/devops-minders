@@ -2,7 +2,7 @@ import { services } from '../../constants/services';
 import { ServiceCard } from './ServiceCard';
 export function ServicesSection() {
     return (
-        <section className="py-24 [#121212] relative">
+        <section className="py-24 [#121212] relative" id="services">
             <div className="container mx-auto px-4">
 
                 <div className="text-center mb-16">
