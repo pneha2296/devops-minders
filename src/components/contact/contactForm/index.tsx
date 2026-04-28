@@ -46,10 +46,10 @@ export default function ContactForm() {
             <div className="bg-black py-16 px-4">
                 <form
                     onSubmit={methods.handleSubmit(onSubmit)}
-                    className="max-w-5xl mx-auto bg-[#111] border border-white/10 rounded-2xl shadow-xl ext-white"
+                    className="relative max-w-5xl mx-auto bg-[#111] border border-white/10 rounded-2xl shadow-xl text-white overflow-hidden"
                 >
-                    {/* Progress bar */}
-                    <div className="h-1 w-full bg-white/10 rounded mb-6 overflow-hidden">
+                    {/* Progress border (inside top border) */}
+                    <div className="absolute top-0 left-0 w-full h-[4px] bg-white/10">
                         <div
                             className="h-full bg-red-600 transition-all duration-300"
                             style={{
@@ -57,8 +57,9 @@ export default function ContactForm() {
                             }}
                         />
                     </div>
-                    <div className="p-8">
-                        {/* Steps */}
+
+                    {/* content */}
+                    <div className="p-8 pt-10">
                         {step === 1 && <Step1 next={next} />}
                         {step === 2 && <Step2 next={next} back={back} />}
                         {step === 3 && <Step3 back={back} />}
