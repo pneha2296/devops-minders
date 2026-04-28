@@ -18,7 +18,7 @@ export function Navbar() {
 
       <header className="fixed top-0 left-0 w-full z-[100] border-b border-white/10 bg-black text-white">
         <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-          <img src="/assets/logo.jpeg" alt="DevOps Minders" className='w-[170px]' />
+          <img src="/assets/logo.png" alt="DevOps Minders" className='w-[170px]' />
 
           <nav className="hidden items-center gap-8 text-sm font-medium md:flex">
             {navigation.map((item) => (
