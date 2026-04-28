@@ -1,0 +1,18 @@
+export const techStack = [
+  'OpenAI',
+  'AWS',
+  'Docker',
+  'Kubernetes',
+  'Terraform',
+  'GitHub Actions',
+  'Node.js',
+  'TypeScript',
+  'Python',
+  'PostgreSQL',
+  'Redis',
+  'Prometheus',
+  'Grafana',
+  'Cloudflare',
+  'LangChain',
+  'Vercel',
+]
