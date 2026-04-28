@@ -4,6 +4,23 @@ import InfiniteMarquee from '../ui/InfiniteMarquee';
 import { clients } from '../../constants/clients';
 
 const ClientsSection: React.FC = () => {
+
+    const handleLinkClick = (url: string) => {
+        window.open(url, '_blank', 'noopener,noreferrer');
+    };
+
+    const getDomainOnly = (url: string) => {
+        try {
+            // Handle cases where the URL might not start with http
+            const formattedUrl = url.startsWith('http') ? url : `https://${url}`;
+            const { hostname } = new URL(formattedUrl);
+            // Remove 'www.' if it exists
+            return hostname.replace('www.', '');
+        } catch (e) {
+            return url; // Fallback to original string if parsing fails
+        }
+    };
+
     return (
         <section className="py-24 bg-black overflow-hidden relative">
             <div className="container mx-auto px-4 mb-12">
@@ -17,6 +34,7 @@ const ClientsSection: React.FC = () => {
                 {clients.map((client, idx) => (
                     <div
                         key={idx}
+                        onClick={() => handleLinkClick(client.url)}
                         className="
               group w-[300px] bg-[#111111] p-6 rounded-xl border border-white/5 
               flex flex-col justify-between relative
@@ -30,7 +48,7 @@ const ClientsSection: React.FC = () => {
                                 <h3 className="text-xl font-bold group-hover:text-white transition-colors">
                                     {client.name}
                                 </h3>
-                                <p className="text-sm text-gray-500 mt-1">{client.url}</p>
+                                <p className="text-sm text-gray-500 mt-1">{getDomainOnly(client.url)}</p>
                             </div>
                             <ExternalLink className="w-4 h-4 text-gray-600 group-hover:text-red-500 transition-colors" />
                         </div>
