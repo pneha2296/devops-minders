@@ -22,6 +22,7 @@ export default function ContactForm() {
     });
 
     const [step, setStep] = useState<number>(1);
+    const [result, setResult] = useState<string>("");
 
     const next = async () => {
         let isValid = false;
@@ -37,8 +38,27 @@ export default function ContactForm() {
 
     const back = () => setStep((s) => s - 1);
 
-    const onSubmit = (data: FormValues) => {
-        console.log("Final Submit:", data);
+    const onSubmit = async (data: FormValues) => {
+        try {
+            const formData = new FormData();
+
+            Object.entries(data).forEach(([key, value]) => {
+                formData.append(key, value as string);
+            });
+
+            formData.append("access_key", "40275540-7719-45b4-ac94-361b9fefb243");
+
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
+
+            const result = await response.json();
+            setResult(result.success ? "Details sent successfully!" : "Error");
+
+        } catch (error) {
+            setResult("Error");
+        }
     };
 
     return (
@@ -57,7 +77,11 @@ export default function ContactForm() {
                             }}
                         />
                     </div>
-
+                    {result && (
+                        <div className="absolute top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center">
+                            <p className="text-2xl font-bold">{result}</p>
+                        </div>
+                    )}
                     {/* content */}
                     <div className="p-8 pt-10">
                         {step === 1 && <Step1 next={next} />}
