@@ -7,12 +7,12 @@ import {
 export function Footer() {
   return (
     <footer className="bg-black text-white pt-12">
-      
+
       {/* Top border */}
       <div className="bg-primary border-t-4 border-primary" />
 
       <div className="container mx-auto px-4 py-16 grid md:grid-cols-4 gap-10">
-        
+
         {/* Brand */}
         <div>
           <div className="flex items-center gap-3 mb-4">
@@ -29,10 +29,30 @@ export function Footer() {
           </p>
 
           <div className="flex gap-4 text-gray-400">
-            <img src="/assets/icons/linkedin.svg" alt="DevOps Minders" className="w-[18px] h-[18px] invert brightness-0 cursor-pointer" />
-            <img src="/assets/icons/twitter.svg" alt="DevOps Minders" className="w-[18px] h-[18px] invert brightness-0 cursor-pointer" />
-            <img src="/assets/icons/github.svg" alt="DevOps Minders" className="w-[18px] h-[18px] invert brightness-0 cursor-pointer" />
-            <img src="/assets/icons/insta.svg" alt="DevOps Minders" className="w-[18px] h-[18px] invert brightness-0 cursor-pointer" />
+            <img
+              src="/assets/icons/linkedin.svg"
+              alt="DevOps Minders"
+              onClick={() => window.open("https://www.linkedin.com/company/devopsminders/?viewAsMember=true", "_blank")}
+              className="w-[18px] h-[18px] invert brightness-0 cursor-pointer"
+            />
+            <img
+              src="/assets/icons/fb.svg"
+              alt="DevOps Minders"
+              onClick={() => window.open("https://www.facebook.com/profile.php?id=61587518322045", "_blank")}
+              className="w-[18px] h-[18px] invert brightness-0 cursor-pointer"
+            />
+            <img
+              src="/assets/icons/github.svg"
+              alt="DevOps Minders"
+              onClick={() => window.open("https://github.com/Ahujakaur", "_blank")}
+              className="w-[18px] h-[18px] invert brightness-0 cursor-pointer"
+            />
+            <img
+              src="/assets/icons/insta.svg"
+              alt="DevOps Minders"
+              onClick={() => window.open("https://www.instagram.com/devopsminders/", "_blank")}
+              className="w-[18px] h-[18px] invert brightness-0 cursor-pointer"
+            />
           </div>
         </div>
 

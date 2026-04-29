@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Cloud, GitBranch, Container, Code2 } from "lucide-react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const ORBIT_ICONS = [
     { Icon: Cloud, label: "Docker" },
@@ -22,6 +23,7 @@ const STATS = [
 ];
 
 export default function HeroSection() {
+    const navigate = useNavigate();
     const [angle, setAngle] = useState(0);
     const rafRef = useRef<number>(0);
     const lastRef = useRef<number>(0);
@@ -93,7 +95,9 @@ export default function HeroSection() {
                     </p>
 
                     <div className="flex flex-wrap gap-4 justify-center">
-                        <button className="bg-red-600 hover:bg-red-700 text-white font-bold px-10 py-4 rounded-full transition-all hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(220,38,38,0.5)]">
+                        <button 
+                        onClick={() => navigate("/contact")}
+                        className="bg-red-600 hover:bg-red-700 text-white font-bold px-10 py-4 rounded-full transition-all hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(220,38,38,0.5)]">
                             Get Free Consultation
                         </button>
                         <button className="border border-white/20 hover:border-white/50 text-white font-medium px-10 py-4 rounded-full transition-all hover:bg-white/5">
