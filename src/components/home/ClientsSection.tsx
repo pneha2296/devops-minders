@@ -22,7 +22,7 @@ const ClientsSection: React.FC = () => {
     };
 
     return (
-        <section className="py-24 bg-black overflow-hidden relative">
+        <section className="py-24 bg-black overflow-hidden relative" id="portfolio">
             <div className="container mx-auto px-4 mb-12">
                 <div>
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Trusted by the Best</h2>
