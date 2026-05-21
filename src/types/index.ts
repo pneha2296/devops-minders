@@ -12,6 +12,15 @@ export interface Client {
   tag: string
 }
 
+export interface PortfolioProject {
+  id: string
+  category: string
+  title: string
+  description: string
+  image: string
+  link: string
+}
+
 export interface Testimonial {
   id: string
   name: string
@@ -67,3 +76,4 @@ export type FormValues = {
   source?: string;
   message: string;
 };
+
