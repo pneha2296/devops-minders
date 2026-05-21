@@ -50,7 +50,7 @@ export const portfolioProjects: PortfolioProject[] = [
     link: 'https://www.loom.com/share/05d44a26667847d1bbb4947bd3716036',
   },
   {
-    id: '6.5',
+    id: '7',
     category: 'UI/UX Design',
     title: 'BMG',
     description: 'great music greater impact',
@@ -58,7 +58,7 @@ export const portfolioProjects: PortfolioProject[] = [
     link: 'https://www.loom.com/share/05d44a26667847d1bbb4947bd3716036',
   }
   {
-    id: '7',
+    id: '8',
     category: 'UI/UX Design',
     title: 'Unpod System',
     description: 'Unpod System',
@@ -66,7 +66,7 @@ export const portfolioProjects: PortfolioProject[] = [
     link: 'https://www.loom.com/share/627d72cc484c4e73944fe46ff1a85401',
   },
   {
-    id: '8',
+    id: '9',
     category: 'UI/UX Design',
     title: 'Maxwell CPA Review',
     description: 'CPA exam preparation platform with modern UI/UX and responsive website design.',
@@ -75,7 +75,7 @@ export const portfolioProjects: PortfolioProject[] = [
     loomLink: 'https://www.loom.com/share/30b13a615b0f4669a70bdf6ec6d1815d',
   },
   {
-    id: '9',
+    id: '10',
     category: 'UI/UX Design',
     title: 'Fearless Code',
     description: 'Software development company website focused on clean layouts and developer branding.',
@@ -84,7 +84,7 @@ export const portfolioProjects: PortfolioProject[] = [
     loomLink: 'https://www.loom.com/share/51b6e4905fce4970bca52324748bd005',
   },
   {
-    id: '10',
+    id: '11',
     category: 'UI/UX Design',
     title: 'Expertify',
     description: 'Developer-focused platform with modern design system and smooth user experience.',
@@ -93,7 +93,7 @@ export const portfolioProjects: PortfolioProject[] = [
     loomLink: 'https://www.loom.com/share/19940c426eb14037b273c36dbff91832',
   },
   {
-    id: '11',
+    id: '12',
     category: 'UI/UX Design',
     title: 'Nestlé India',
     description: 'Corporate food and beverage brand website with structured navigation and branding.',
@@ -102,7 +102,7 @@ export const portfolioProjects: PortfolioProject[] = [
     loomLink: 'https://www.loom.com/share/e8e04132f76c412ebb055b6c071a4ce5',
   },
   {
-    id: '12',
+    id: '13',
     category: 'UI/UX Design',
     title: 'Cadbury UK',
     description: 'Chocolate brand website featuring interactive product showcases and engaging visuals.',
