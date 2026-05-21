@@ -56,7 +56,7 @@ export const portfolioProjects: PortfolioProject[] = [
     description: 'great music greater impact',
     image: '/assets/images/photo7.jpeg',
     link: 'https://www.loom.com/share/05d44a26667847d1bbb4947bd3716036',
-  }
+  },
   {
     id: '8',
     category: 'UI/UX Design',
