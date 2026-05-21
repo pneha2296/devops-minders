@@ -22,7 +22,7 @@ export const portfolioProjects: PortfolioProject[] = [
     category: 'UI/UX Design',
     title: 'Match@Health Desktop',
     description: 'Healthcare Matching Platform',
-    image: '/assets/images/photo3.png',
+    image: '/assets/images/photo5.png',
     link: 'https://www.loom.com/share/d5786444918f45339e41d50b16dd733a',
   },
   {
@@ -30,7 +30,7 @@ export const portfolioProjects: PortfolioProject[] = [
     category: 'UI/UX Design',
     title: 'Match@Health Mobile',
     description: 'Mobile Healthcare Experience',
-    image: '/assets/images/photo5.png',
+    image: '/assets/images/photo3.png',
     link: 'https://www.loom.com/share/901d2ac102a240b6ab54477987c57232',
   },
   {
