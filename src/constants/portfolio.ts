@@ -72,7 +72,7 @@ export const portfolioProjects: PortfolioProject[] = [
     description: 'CPA exam preparation platform with modern UI/UX and responsive website design.',
     image: '/assets/images/photo9.jpeg',
     websiteLink: 'https://maxwellcpareview.com/about',
-    loomLink: 'https://www.loom.com/share/30b13a615b0f4669a70bdf6ec6d1815d',
+    link: 'https://www.loom.com/share/30b13a615b0f4669a70bdf6ec6d1815d',
   },
   {
     id: '10',
@@ -81,7 +81,7 @@ export const portfolioProjects: PortfolioProject[] = [
     description: 'Software development company website focused on clean layouts and developer branding.',
     image: '/assets/images/photo10.jpeg',
     websiteLink: 'https://www.fearlesscode.de/',
-    loomLink: 'https://www.loom.com/share/51b6e4905fce4970bca52324748bd005',
+    link: 'https://www.loom.com/share/51b6e4905fce4970bca52324748bd005',
   },
   {
     id: '11',
@@ -90,7 +90,7 @@ export const portfolioProjects: PortfolioProject[] = [
     description: 'Developer-focused platform with modern design system and smooth user experience.',
     image: '/assets/images/photo11.jpeg',
     websiteLink: 'https://expertify.dev/',
-    loomLink: 'https://www.loom.com/share/19940c426eb14037b273c36dbff91832',
+    link: 'https://www.loom.com/share/19940c426eb14037b273c36dbff91832',
   },
   {
     id: '12',
@@ -99,7 +99,7 @@ export const portfolioProjects: PortfolioProject[] = [
     description: 'Corporate food and beverage brand website with structured navigation and branding.',
     image: '/assets/images/photo12.jpeg',
     websiteLink: 'https://www.nestle.in/',
-    loomLink: 'https://www.loom.com/share/e8e04132f76c412ebb055b6c071a4ce5',
+    link: 'https://www.loom.com/share/e8e04132f76c412ebb055b6c071a4ce5',
   },
   {
     id: '13',
@@ -108,7 +108,7 @@ export const portfolioProjects: PortfolioProject[] = [
     description: 'Chocolate brand website featuring interactive product showcases and engaging visuals.',
     image: '/assets/images/photo13.jpeg',
     websiteLink: 'https://www.cadbury.co.uk/',
-    loomLink: 'https://www.loom.com/share/d926acc1d21f421794587c35a5b49941',
+    link: 'https://www.loom.com/share/d926acc1d21f421794587c35a5b49941',
   },
 ]
 

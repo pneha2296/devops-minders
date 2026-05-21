@@ -18,6 +18,7 @@ export interface PortfolioProject {
   title: string
   description: string
   image: string
+  websiteLink?: string
   link: string
 }
 
